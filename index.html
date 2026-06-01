@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    table {
+      width: 35%;
+    }
+    th {
+      background: lightblue;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .form-table {
+      width: 35%;
+      border-collapse: separate;
+      border-spacing: 5px;
+      border: 1px solid black;
+    }
+
+    th {
+      background: lightblue;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <table class="form-table">
+      <form>
+        <thead>
+          <tr>
+            <th width="50%">Name</th>
+            <th width="50%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td><input style="width: 94%" type="text" placeholder="Name" /></td>
+          </tr>
+          <tr>
+            <td>Sex</td>
+            <td>
+              <input type="radio" name="sex" value="male" /> Male <br /><input
+                type="radio"
+                name="sex"
+                value="female"
+              />Female
+            </td>
+          </tr>
+          <tr>
+            <td>Eye color</td>
+            <td>
+              <select name="eye-color">
+                <option value="green">Green</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Check all that apply</td>
+            <td>
+              <input type="checkbox" name="Over 6 feet tall" value="as" />Over 6
+              feet tall <br /><input
+                type="checkbox"
+                name="Over 600 pounds"
+                value="s"
+              />Over 600 pounds
+            </td>
+          </tr>
+        </tbody>
+        <tr>
+          <td colspan="2">
+            Describe your athletic ability:
+            <br />
+            <center>
+              <textarea
+                style="width: 96%; height: 100px; border: 1px solid black"
+              ></textarea>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" height="25px">
+            <center>
+              <input type="submit" value="Enter my information" />
+            </center>
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
